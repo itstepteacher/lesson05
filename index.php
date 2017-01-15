@@ -26,8 +26,8 @@
 
 try {
     // Подключение к б/д
-    $dsn = "mysql:host=localhost;dbname=blog";
-    //$dsn = "sqlite:blog.sqlite";
+    //$dsn = "mysql:host=localhost;dbname=blog";
+    $dsn = "sqlite:blog.sqlite";
     $db = new PDO($dsn, 'blog', 'blog');
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
